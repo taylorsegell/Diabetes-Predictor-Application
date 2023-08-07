@@ -1,0 +1,38 @@
+<script>
+    $(document).ready(function() {
+        $('#diagnosis-form').submit(function (e) {
+            e.preventDefault(); // block the traditional submission of the form.
+
+            var url = "{{ url_for('diagnosis') }}"; // send the form data here.
+
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: $('form').serialize(), // serializes the form's elements.
+                success: function (data) {
+                    var prediction = data.prediction;
+                    var resultHtml = "Prediction diagnosis: <strong>" + prediction + "</strong><br> Prediction accuracy: <strong>" + data.accuracy + "</strong>";
+                    
+                    if (prediction === "Positive") {
+                        $('#diagnosis-result').css('color', 'red'); // Set the text color to red for "Positive" diagnosis.
+                    } else {
+                        $('#diagnosis-result').css('color', 'green'); // Reset the text color to black for other diagnoses.
+                    }
+                    
+                    $('#diagnosis-result').fadeOut('fast', () => {
+                        $('#diagnosis-result').html(resultHtml);
+                    }).fadeIn('slow');
+                }
+            });
+        });
+
+        // Inject our CSRF token into our AJAX request.
+        $.ajaxSetup({
+            beforeSend: function(xhr, settings) {
+                if (!/^(GET|HEAD|OPTIONS|TRACE)$/i.test(settings.type) && !this.crossDomain) {
+                    xhr.setRequestHeader("X-CSRFToken", "{{ form.csrf_token._value() }}")
+                }
+            }
+        })
+    });
+</script>

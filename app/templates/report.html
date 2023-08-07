@@ -1,0 +1,13 @@
+{% extends "template.html" %}
+
+{% set active_page = "report" %}
+
+{% block content %}
+<div class="container shadow rounded fadeIn p-5 my-5 bg-white" id="content">
+
+    <div>
+        <iframe src="{{ url_for('static',     filename='report.html') }}" width="100%" height="1000"></iframe>
+    </div>
+</div>
+
+{% endblock %}
