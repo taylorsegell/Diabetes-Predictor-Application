@@ -20,7 +20,7 @@ html_layout = """
 
     <!-- bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" async integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    <title>Visaul Overview</title>
+    <title>Visual Overview</title>
 </head>
 <body class="d-flex flex-column h-100 body">
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow">
@@ -38,7 +38,7 @@ html_layout = """
                     <a class="nav-link " href="/diagnose">Predictor</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Visaul Overview</a>
+                    <a class="nav-link active" href="#">Visual Overview</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " href="/about">About</a>
