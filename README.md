@@ -2,6 +2,10 @@
 
 In this project, we employed machine learning techniques to predict a patient's diabetes status based on a questionnaire consisting of several related symptoms. The main goal was to develop a robust machine learning model capable of accurately classifying patients as either diabetic or non-diabetic. Subsequently, we deployed this trained model into a web-based application using Flask, which was hosted on the Hostinger platform. To enhance user experience and provide insightful data visualizations, we integrated the Plotly Dash platform seamlessly into the Flask app.
 
+
+![Prediction App](screenshots/app-prediction.gif)
+
+
 ## Technology Stack
 The technologies utilized in this project were carefully chosen to ensure efficiency and accuracy. The main tools and frameworks employed include:
 
