@@ -22,3 +22,5 @@ new_data/normalized_diabetes.csv
 new_data/normed_diabetes.csv
 data.csv
 app/og-routes.py
+README2.md
+app/.env

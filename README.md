@@ -1,37 +1,60 @@
-# Utilizing Machine Learning for Diabetes Prediction and Building an Interactive Web Application
+# Leveraging Cloud Pak for Data to Utilize Machine Learning for Diabetes Prediction and Build an Interactive Web Application
 
-In this project, we employed machine learning techniques to predict a patient's diabetes status based on a questionnaire consisting of several related symptoms. The main goal was to develop a robust machine learning model capable of accurately classifying patients as either diabetic or non-diabetic. Subsequently, we deployed this trained model into a web-based application using Flask, which was hosted on the Hostinger platform. To enhance user experience and provide insightful data visualizations, we integrated the Plotly Dash platform seamlessly into the Flask app.
+In this project, we showcase how IBM Cloud Pak for Data can be utilized to leverage machine learning techniques for predicting a patient's diabetes status. The primary focus is on developing a robust machine learning model with IBM Watson Machine Learning (WML) as the base for model deployment. With the power of Cloud Pak for Data, we demonstrate the seamless integration of Python programming, Jupyter Notebooks, scikit-learn, Pandas, Flask, and Plotly Dash to create an interactive web application.
+
+By utilizing Cloud Pak for Data, you'll see how machine learning models can be constructed, trained, and deployed with ease. We highlight the importance of feature selection, data preprocessing, and hyperparameter tuning in achieving accurate diabetes predictions. With Cloud Pak for Data's support, Jupyter Notebooks provide an interactive and collaborative environment for developing and refining machine learning models.
+
+To deliver the trained machine learning model to end-users, we deploy it within a web-based application using Flask, a lightweight and versatile web framework. The integration of Plotly Dash enhances the visualization capabilities of the web application, allowing users to have an interactive and visually appealing experience.
+
+With Cloud Pak for Data, you'll gain proficiency in essential tools and frameworks used in the machine learning community. You'll be able to leverage the power of IBM Watson Machine Learning, Python programming, scikit-learn, Pandas, Flask, and Plotly Dash to develop and deploy machine learning applications effectively.
+
+This project serves as a demonstration, showcasing how IBM Cloud Pak for Data enables seamless integration of machine learning models into web applications, offering a scalable and efficient solution for deploying machine learning applications. By utilizing Cloud Pak for Data, you can unlock the full potential of machine learning and create impactful applications for solving real-world problems.
 
 
 ![Prediction App](screenshots/app-prediction.gif)
 
+### Technology Stack
 
-## Technology Stack
-The technologies utilized in this project were carefully chosen to ensure efficiency and accuracy. The main tools and frameworks employed include:
+> The following technologies were utilized:
 
-- Python: The primary programming language used for the machine learning model development and web application creation.
-- Jupyter Notebooks: We utilized Jupyter Notebooks for interactive and collaborative development during the machine learning model creation process.
-- Scikit-learn (sklearn): This powerful library provided the necessary tools for building and training the machine learning model.
-- Pandas: Used for data manipulation, preprocessing, and feature engineering, Pandas helped us prepare the dataset for model training.
-- Flask: A lightweight and versatile web framework, Flask allowed us to develop the web application to deploy our machine learning model.
-- Plotly Dash: Integrated into the Flask app, Plotly Dash enabled us to generate interactive and visually appealing data visualizations.
-- jQuery: Leveraging asynchronous functions with jQuery, we optimized the user experience and ensured smooth interactions in the web application.
-- Bootstrap 5: We adopted Bootstrap 5 to achieve a responsive and aesthetically pleasing design, making the web application accessible across various devices.
+| Technology                                                   | Description                                                                                                          |
+| ------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------- |
+| ![IBM Cloud Pak for Data](https://img.shields.io/badge/IBM%20Cloud%20Pak%20for%20Data-black?logo=ibm)                   | The Modern Data Platform by IBM                                                                                      |
+| ![Watson Machine Learning](https://img.shields.io/badge/Watson%20Machine%20Learning-black?logo=ibm)                     | Cloud Pak for Data's Model Deployment Spaces                                                                         |
+| ![Python](https://img.shields.io/badge/Python-black?logo=python)                                                           | The primary programming language for developing the machine learning models and web application                     |
+| ![Jupyter Notebooks](https://img.shields.io/badge/Jupyter%20Notebooks-black?logo=Jupyter)                                 | Used for interactive and collaborative development during the creation of machine learning models with WML           |
+| ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-black?logo=scikit-learn)                                       | A powerful library used for building and training the machine learning models                                         |
+| ![Pandas](https://img.shields.io/badge/Pandas-black?logo=pandas)                                                           | Utilized for data manipulation, preprocessing, and feature engineering to prepare the dataset for model training     |
+| ![Flask](https://img.shields.io/badge/Flask-black?logo=flask)                                                               | A lightweight and versatile web framework used for developing the web application to deploy the machine learning models |
+| ![Plotly Dash](https://img.shields.io/badge/Plotly%20Dash-black?logo=plotly)                                               | Integrated into the Flask app to generate interactive and visually appealing data visualizations                      |
+| ![jQuery](https://img.shields.io/badge/jQuery-black?logo=jquery)                                                           | Leveraged for asynchronous functions to optimize user experience and ensure smooth interactions in the web application |
+| ![Bootstrap 5](https://img.shields.io/badge/Bootstrap%205-black?logo=bootstrap)                                           | Adopted for achieving a responsive and aesthetically pleasing design, making the web application accessible across devices |
+
+
 
 ## Learning Outcomes
-Throughout the duration of this project, we gained valuable experience in several key areas:
+Through the demonstration of deploying machine learning applications with IBM Cloud Pak for Data and WML, users will gain insights into the following areas:
 
-1. **Machine Learning Model Development**: We honed our skills in constructing and training a machine learning model for classification tasks. This included understanding feature selection, data preprocessing, and hyperparameter tuning using Scikit-learn and Jupyter Notebooks.
+**Machine Learning Model Development**: Understanding the construction, training, feature selection, data preprocessing, and hyperparameter tuning of machine learning models using IBM Cloud Pak for Data and Jupyter Notebooks.
 
-2. **Tool Proficiency**: Working with Anaconda, Jupyter Notebooks, Scikit-learn, Pandas, and Seaborn exposed us to the essential tools widely used in the machine learning community, enhancing our competence in these technologies.
+**Tool Proficiency**: Becoming proficient in Anaconda, Jupyter Notebooks, Scikit-learn, Pandas, and Seaborn, which are widely used tools in the machine learning community.
 
-3. **Web Application Development with Flask**: By building a web application using Flask, we learned about web frameworks, routing, and handling user requests. This allowed us to serve our machine learning model predictions to end-users efficiently.
+**Web Application Development with Flask:** Learning about web frameworks, routing, and handling user requests by building a web application with Flask to efficiently serve machine learning model predictions to end-users.
 
-4. **Integration of Plotly Dash**: We explored the seamless integration of Plotly Dash into a Flask application, harnessing its interactive data visualization capabilities. This skill enabled us to create dynamic and insightful visualizations for users.
+**Integration of Plotly Dash**: Exploring the seamless integration of Plotly Dash into a Flask application to create dynamic and insightful visualizations for users.
 
-5. **Asynchronous Functions with jQuery and AJAX**: By incorporating jQuery and AJAX in the diagnosis form, we improved the web application's responsiveness and user experience. Asynchronous operations facilitated real-time interactions without interrupting the user flow.
+**Asynchronous Functions with jQuery and AJAX**: Incorporating jQuery and AJAX in the web application to improve responsiveness and user experience, allowing for real-time interactions.
 
-Overall, this project provided us with a comprehensive understanding of machine learning model development, web application deployment, and the importance of interactive data visualizations for end-users. The combination of these skills sets a solid foundation for our future endeavors in the field of data science and web development.
+Overall, this demo provides a comprehensive understanding of machine learning model development, web application deployment, and the importance of interactive data visualizations for end-users. These skills establish a solid foundation for future endeavors in the fields of data science and web development with IBM Cloud Pak for Data and WML.
 
+## Future Improvements To-Do List
 
-Credits to Dylain Cairns for the original project and Inspiration
+- [ ] Move all of the Notebooks and prelimenary work into Cloud Pak for Data - Git Integrated Repository
+- [ ] Enhance model accuracy by exploring AutoAI
+- [ ] Leverage Watson OpenScale to Monitor Model
+- [ ] Introduce Model Fact Sheets section
+- [ ] Optimize the web application's responsiveness and performance for better user experience.
+- [ ] Move the application to IBM Cloud
+- [ ] Refactor and clean the codebase for better readability and maintainability.
+- [ ] Implement error handling and validation for user inputs.
+- [ ] Provide detailed documentation and a step-by-step walkthrough/lab guide for future users.

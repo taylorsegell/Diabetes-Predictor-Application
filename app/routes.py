@@ -4,6 +4,11 @@ import requests
 from app.forms import DiagnoseForm
 
 
+''' 
+This is the part of your application that triggers the model run, below you will replace the api key with your key '''
+
+
+# Define the Flask routes
 @app.route("/", methods=['GET'])
 def home():
     return render_template("home.html", title='Home')
@@ -72,9 +77,9 @@ def diagnosis():
             'prediction': prediction,
             'accuracy': accuracy
         }
-
+ # Return the results as a JSON response
         return results
-
+  # If the form data is invalid, return the validation errors as a JSON response
     return jsonify(data=form.errors)
 
 
