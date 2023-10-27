@@ -1,5 +1,7 @@
 # Leveraging Cloud Pak for Data to Utilize Machine Learning for Diabetes Prediction and Build an Interactive Web Application
 
+>View the Live Application [Here](https://diabetes.sokratic.app/)
+
 In this project, we showcase how IBM Cloud Pak for Data can be utilized to leverage machine learning techniques for predicting a patient's diabetes status. The primary focus is on developing a robust machine learning model with IBM Watson Machine Learning (WML) as the base for model deployment. With the power of Cloud Pak for Data, we demonstrate the seamless integration of Python programming, Jupyter Notebooks, scikit-learn, Pandas, Flask, and Plotly Dash to create an interactive web application.
 
 By utilizing Cloud Pak for Data, you'll see how machine learning models can be constructed, trained, and deployed with ease. We highlight the importance of feature selection, data preprocessing, and hyperparameter tuning in achieving accurate diabetes predictions. With Cloud Pak for Data's support, Jupyter Notebooks provide an interactive and collaborative environment for developing and refining machine learning models.
