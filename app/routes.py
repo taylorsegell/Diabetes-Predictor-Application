@@ -26,7 +26,7 @@ def diagnose():
 
 
 # Define the URL for the IBM Watson Machine Learning service
-WML_URL = 'https://us-south.ml.cloud.ibm.com/ml/v4/deployments/diabetes_predictor/predictions?version=2021-05-01'
+WML_URL = 'https://us-south.ml.cloud.ibm.com/ml/v4/deployments/diabetes_deployed/predictions?version=2021-05-01'
 API_KEY = "kAo8wfLY-SFjfIb9nsvm35oCkCxfxx_LYpFg4m08n61j"
 
 @app.route('/diagnosis', methods=['POST'])

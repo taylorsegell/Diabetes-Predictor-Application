@@ -24,3 +24,4 @@ data.csv
 app/og-routes.py
 README2.md
 app/.env
+app/__pycache__/routes.cpython-310.pyc
