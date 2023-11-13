@@ -1,14 +1,18 @@
 {% extends "template.html" %} {% set active_page = "diagnose" %} {% block content %}
 <div class="container shadow rounded fadeIn p-5 my-5 bg-white" id="content">
-    <h2 style='text-align:left'>Cloud Pak for Data - Diabetes Status Diagnosis </h2>
+    <h1 style='text-align:center'>Diabetes Status Diagnosis </h1>
+    <h3 style="text-align: center;font-weight: 200;">Courtesey of Cloud Pak for Data with watson<span
+            style="color: blue;font-weight: 400;">x</span>.ai</h3>
+    <br>
     <br>
     <div class="container">
         <form action="" id="diagnosis-form" method="post">
             {{ form.hidden_tag() }}
             <div class="row">
-                <div class="form-check mb-4 col-md-1"></div>                
+                <div class="form-check mb-4 col-md-1"></div>
                 <div class="form-check mb-4 col-md-4">
-                    {{ form.age.label(class_="visually-hidden") }} {{ form.age(class_="form-control", placeholder="Enter Your Age") }}
+                    {{ form.age.label(class_="visually-hidden") }} {{ form.age(class_="form-control", placeholder="Enter
+                    Your Age") }}
                 </div>
                 <div class="form-check mb-4 col-md-3"></div>
                 {% for subfield in form.gender %}
@@ -30,25 +34,31 @@
                     {{ form.polyuria(class_="form-check-input") }} {{ form.polyuria.label(class_="form-check-label") }}
                 </div>
                 <div class="form-check mb-4 col-md-3">
-                    {{ form.polydipsia(class_="form-check-input") }} {{ form.polydipsia.label(class_="form-check-label") }}
+                    {{ form.polydipsia(class_="form-check-input") }} {{ form.polydipsia.label(class_="form-check-label")
+                    }}
                 </div>
                 <div class="form-check mb-4 col-md-3">
-                    {{ form.sudden_wl(class_="form-check-input") }} {{ form.sudden_wl.label(class_="form-check-label") }}
+                    {{ form.sudden_wl(class_="form-check-input") }} {{ form.sudden_wl.label(class_="form-check-label")
+                    }}
                 </div>
                 <div class="form-check mb-4 col-md-3">
-                    {{ form.genital_thrush(class_="form-check-input") }} {{ form.genital_thrush.label(class_="form-check-label") }}
+                    {{ form.genital_thrush(class_="form-check-input") }} {{
+                    form.genital_thrush.label(class_="form-check-label") }}
                 </div>
 
             </div>
             <div class="row">
                 <div class="form-check mb-4 col-md-3">
-                    {{ form.irritability(class_="form-check-input") }} {{ form.irritability.label(class_="form-check-label") }}
+                    {{ form.irritability(class_="form-check-input") }} {{
+                    form.irritability.label(class_="form-check-label") }}
                 </div>
                 <div class="form-check mb-4 col-md-3">
-                    {{ form.delayed_healing(class_="form-check-input") }} {{ form.delayed_healing.label(class_="form-check-label") }}
+                    {{ form.delayed_healing(class_="form-check-input") }} {{
+                    form.delayed_healing.label(class_="form-check-label") }}
                 </div>
                 <div class="form-check mb-4 col-md-3">
-                    {{ form.muscle_stiffness(class_="form-check-input") }} {{ form.muscle_stiffness.label(class_="form-check-label") }}
+                    {{ form.muscle_stiffness(class_="form-check-input") }} {{
+                    form.muscle_stiffness.label(class_="form-check-label") }}
                 </div>
                 <div class="form-check mb-4 col-md-3">
                     {{ form.alopecia(class_="form-check-input") }} {{ form.alopecia.label(class_="form-check-label") }}
@@ -73,7 +83,8 @@
 
         <br>
 
-        <div class="alert alert-secondary shadow" id="diagnosis-result" role="alert" style="border: 2px solid black;"></div>
+        <div class="alert alert-secondary shadow" id="diagnosis-result" role="alert" style="border: 2px solid black;">
+        </div>
 
     </div>
 </div>
