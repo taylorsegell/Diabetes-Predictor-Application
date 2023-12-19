@@ -25,3 +25,6 @@ app/og-routes.py
 README2.md
 app/.env
 app/__pycache__/routes.cpython-310.pyc
+app/static/old-heatmap.html
+app/static/old_matrix.png
+app/static/ibm-watsonxai-a04.l.webp

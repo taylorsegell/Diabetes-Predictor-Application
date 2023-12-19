@@ -1,16 +1,24 @@
-# Leveraging Cloud Pak for Data to Utilize Machine Learning for Diabetes Prediction and Build an Interactive Web Application
+# Leveraging Cloud Pak for Data and watson<span
+            style="color: blue;font-weight: 400;">x</span>.ai to Utilize Machine Learning for Diabetes Prediction and Build an Interactive Web Application
 
 >View the Live Application [Here](https://diabetes.sokratic.app/)
 
-In this project, we showcase how IBM Cloud Pak for Data can be utilized to leverage machine learning techniques for predicting a patient's diabetes status. The primary focus is on developing a robust machine learning model with IBM Watson Machine Learning (WML) as the base for model deployment. With the power of Cloud Pak for Data, we demonstrate the seamless integration of Python programming, Jupyter Notebooks, scikit-learn, Pandas, Flask, and Plotly Dash to create an interactive web application.
+In this project, we showcase how IBM Cloud Pak for Data and watson<span
+            style="color: blue;font-weight: 400;">x</span>.ai can be utilized to leverage machine learning techniques for predicting a patient's diabetes status. The primary focus is on developing a robust machine learning model with IBM Watson Machine Learning (WML) as the base for model deployment. With the power of Cloud Pak for Data and watson<span
+            style="color: blue;font-weight: 400;">x</span>.ai, we demonstrate the seamless integration of Python programming, Jupyter Notebooks, scikit-learn, Pandas, Flask, and Plotly Dash to create an interactive web application.
 
-By utilizing Cloud Pak for Data, you'll see how machine learning models can be constructed, trained, and deployed with ease. We highlight the importance of feature selection, data preprocessing, and hyperparameter tuning in achieving accurate diabetes predictions. With Cloud Pak for Data's support, Jupyter Notebooks provide an interactive and collaborative environment for developing and refining machine learning models.
+By utilizing Cloud Pak for Data and watson<span
+            style="color: blue;font-weight: 400;">x</span>.ai, you'll see how machine learning models can be constructed, trained, and deployed with ease. We highlight the importance of feature selection, data preprocessing, and hyperparameter tuning in achieving accurate diabetes predictions. With Cloud Pak for Data and watson<span
+            style="color: blue;font-weight: 400;">x</span>.ai's support, Jupyter Notebooks provide an interactive and collaborative environment for developing and refining machine learning models.
 
 To deliver the trained machine learning model to end-users, we deploy it within a web-based application using Flask, a lightweight and versatile web framework. The integration of Plotly Dash enhances the visualization capabilities of the web application, allowing users to have an interactive and visually appealing experience.
 
-With Cloud Pak for Data, you'll gain proficiency in essential tools and frameworks used in the machine learning community. You'll be able to leverage the power of IBM Watson Machine Learning, Python programming, scikit-learn, Pandas, Flask, and Plotly Dash to develop and deploy machine learning applications effectively.
+With Cloud Pak for Data and watson<span
+            style="color: blue;font-weight: 400;">x</span>.ai, you'll gain proficiency in essential tools and frameworks used in the machine learning community. You'll be able to leverage the power of IBM Watson Machine Learning, Python programming, scikit-learn, Pandas, Flask, and Plotly Dash to develop and deploy machine learning applications effectively.
 
-This project serves as a demonstration, showcasing how IBM Cloud Pak for Data enables seamless integration of machine learning models into web applications, offering a scalable and efficient solution for deploying machine learning applications. By utilizing Cloud Pak for Data, you can unlock the full potential of machine learning and create impactful applications for solving real-world problems.
+This project serves as a demonstration, showcasing how IBM Cloud Pak for Data and watson<span
+            style="color: blue;font-weight: 400;">x</span>.ai enables seamless integration of machine learning models into web applications, offering a scalable and efficient solution for deploying machine learning applications. By utilizing Cloud Pak for Data and watson<span
+            style="color: blue;font-weight: 400;">x</span>.ai, you can unlock the full potential of machine learning and create impactful applications for solving real-world problems.
 
 
 ![Prediction App](screenshots/app-prediction.gif)
@@ -21,8 +29,10 @@ This project serves as a demonstration, showcasing how IBM Cloud Pak for Data en
 
 | Technology                                                   | Description                                                                                                          |
 | ------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------- |
-| ![IBM Cloud Pak for Data](https://img.shields.io/badge/IBM%20Cloud%20Pak%20for%20Data-black?logo=ibm)                   | The Modern Data Platform by IBM                                                                                      |
-| ![Watson Machine Learning](https://img.shields.io/badge/Watson%20Machine%20Learning-black?logo=ibm)                     | Cloud Pak for Data's Model Deployment Spaces                                                                         |
+| ![IBM Cloud Pak for Data and watson<span
+            style="color: blue;font-weight: 400;">x</span>.ai](https://img.shields.io/badge/IBM%20Cloud%20Pak%20for%20Data-black?logo=ibm)                   | The Modern Data Platform by IBM                                                                                      |
+| ![Watson Machine Learning](https://img.shields.io/badge/Watson%20Machine%20Learning-black?logo=ibm)                     | Cloud Pak for Data and watson<span
+            style="color: blue;font-weight: 400;">x</span>.ai's Model Deployment Spaces                                                                         |
 | ![Python](https://img.shields.io/badge/Python-black?logo=python)                                                           | The primary programming language for developing the machine learning models and web application                     |
 | ![Jupyter Notebooks](https://img.shields.io/badge/Jupyter%20Notebooks-black?logo=Jupyter)                                 | Used for interactive and collaborative development during the creation of machine learning models with WML           |
 | ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-black?logo=scikit-learn)                                       | A powerful library used for building and training the machine learning models                                         |
@@ -35,9 +45,11 @@ This project serves as a demonstration, showcasing how IBM Cloud Pak for Data en
 
 
 ## Learning Outcomes
-Through the demonstration of deploying machine learning applications with IBM Cloud Pak for Data and WML, users will gain insights into the following areas:
+Through the demonstration of deploying machine learning applications with IBM Cloud Pak for Data and watson<span
+            style="color: blue;font-weight: 400;">x</span>.ai and WML, users will gain insights into the following areas:
 
-**Machine Learning Model Development**: Understanding the construction, training, feature selection, data preprocessing, and hyperparameter tuning of machine learning models using IBM Cloud Pak for Data and Jupyter Notebooks.
+**Machine Learning Model Development**: Understanding the construction, training, feature selection, data preprocessing, and hyperparameter tuning of machine learning models using IBM Cloud Pak for Data and watson<span
+            style="color: blue;font-weight: 400;">x</span>.ai and Jupyter Notebooks.
 
 **Tool Proficiency**: Becoming proficient in Anaconda, Jupyter Notebooks, Scikit-learn, Pandas, and Seaborn, which are widely used tools in the machine learning community.
 
@@ -47,11 +59,13 @@ Through the demonstration of deploying machine learning applications with IBM Cl
 
 **Asynchronous Functions with jQuery and AJAX**: Incorporating jQuery and AJAX in the web application to improve responsiveness and user experience, allowing for real-time interactions.
 
-Overall, this demo provides a comprehensive understanding of machine learning model development, web application deployment, and the importance of interactive data visualizations for end-users. These skills establish a solid foundation for future endeavors in the fields of data science and web development with IBM Cloud Pak for Data and WML.
+Overall, this demo provides a comprehensive understanding of machine learning model development, web application deployment, and the importance of interactive data visualizations for end-users. These skills establish a solid foundation for future endeavors in the fields of data science and web development with IBM Cloud Pak for Data and watson<span
+            style="color: blue;font-weight: 400;">x</span>.ai and WML.
 
 ## Future Improvements To-Do List
 
-- [ ] Move all of the Notebooks and prelimenary work into Cloud Pak for Data - Git Integrated Repository
+- [ ] Move all of the Notebooks and prelimenary work into Cloud Pak for Data and watson<span
+            style="color: blue;font-weight: 400;">x</span>.ai - Git Integrated Repository
 - [ ] Enhance model accuracy by exploring AutoAI
 - [ ] Leverage Watson OpenScale to Monitor Model
 - [ ] Introduce Model Fact Sheets section

@@ -1,5 +1,5 @@
 body {
-    background-color: #0f5132;
+    background-color: #103A6D;
 }
 
 #homepage {
@@ -9,21 +9,22 @@ body {
 
 .btn-primary {
     color: #fff;
-    background-color: #0f5132;
-    border-color: #0f5132;
+    background-color: #103A6D;
+    border-color: #103A6D;
 }
 .btn-primary:hover {
     color: #fff;
-    background-color: #198754;
-    border-color: #198754;
+    background-color: #2960F9;
+    border-color: #2960F9;
 }
 
 
 #homepagebackground {
-    background: url(ai-banner.jpg);
-    background-color: #0f5132;
+    background: url(ai-banner.png);
+    background-color: #103A6D;
     background-size: cover;
     background-repeat: no-repeat;
+    color:#103A6D!important;
 }
 
 @media only screen and (max-width: 600px) {
@@ -33,7 +34,7 @@ body {
 }
 
 .navbar {
-    background-color: #0f5132;
+    background-color: #103A6D;
 }
 
 #content {
@@ -46,12 +47,12 @@ body {
 
 .fa-4x {
     font-size: 4em;
-    color: #0f5132;
+    color: #103A6D;
 }
 /* hide result div initially, required for fade effects */
 .btn-secondary {
     color: #fff;
-    background-color: #0f5132;
+    background-color: #103A6D;
     border-color: #6c757d;
 }
 #diagnosis-result {

@@ -13,20 +13,29 @@ from .. import rf_model
 import plotly.io as pio
 pio.templates.default = 'seaborn'
 
-colors = [
-    [0, '#0b2819'],
-    [0.1, '#0d301e'],
-    [0.2, '#103823'],
-    [0.3, '#124028'],
-    [0.4, '#14482d'],
-    [0.5, '#175132'],
-    [0.6, '#175132'],
-    [0.7, '#2e6246'],
-    [0.8, '#45735a'],
-    [0.9, '#5c856f'],
-    [1.0, '#739684'],
-
-
+colors = [[0.0, '#052F5F'],
+          [0.1, '#0B3D8C'],
+          [0.2, '#124AB7'],
+          [0.3, '#1861D1'],
+          [0.4, '#2E75B6'],
+          [0.5, '#4B8FCE'],
+          [0.6, '#69A6E4'],
+          [0.7, '#87BEFA'],
+          [0.8, '#A6D6FF'],
+          [0.9, '#C4EFFF'],
+          [1.0, '#E3F8FF']]
+reversed_colors_list = [
+    [0.0, '#E3F8FF'],
+    [0.1, '#C4EFFF'],
+    [0.2, '#A6D6FF'],
+    [0.3, '#87BEFA'],
+    [0.4, '#69A6E4'],
+    [0.5, '#4B8FCE'],
+    [0.6, '#2E75B6'],
+    [0.7, '#1861D1'],
+    [0.8, '#124AB7'],
+    [0.9, '#0B3D8C'],
+    [1.0, '#052F5F']
 ]
 
 
@@ -79,7 +88,7 @@ def init_dashboard(server):
                                  labels={'value': 'Importance',
                                          'index': 'Features'},
                                  color=feature_importance.values,  # Set color to the importance values
-                                 color_continuous_scale=colors  # Change to green color scale
+                                 color_continuous_scale=reversed_colors_list  # Change to blue color scale
                                  )
     feat_importance_fig.layout.update(showlegend=False,
                                       plot_bgcolor='rgba(0,0,0,0)',
@@ -92,13 +101,15 @@ def init_dashboard(server):
     age_scatter_fig.add_trace(go.Scatter(x=x_graph, y=y_graph,
                                          mode='markers',
                                          name='Diabetes',
-                                         marker={"size": 12, "color": 'red'}))  # Change marker color to green
+                                         # Change marker color to green
+                                         marker={"size": 12, "color": 'red'}))
     x_graphb = df[df['Polyuria'] == True]['Age'].value_counts().index
     y_graphb = df[df['Polyuria'] == True]['Age'].value_counts().values
     age_scatter_fig.add_trace(go.Scatter(x=x_graphb, y=y_graphb,
                                          mode='markers',
                                          name='Polyuria',
-                                         marker={"size": 12, "color": 'green'}))  # Change marker color to green
+                                         # Change marker color to green
+                                         marker={"size": 12, "color": 'blue'}))
     age_scatter_fig.update_layout(
         xaxis_title="Age",
         yaxis_title="Number of Patients",

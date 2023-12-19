@@ -20,21 +20,21 @@
     <title>{{title}}</title>
 </head>
 
-<body class="d-flex flex-column h-100 body" id="homepage">
+<body class="d-flex flex-column h-100 body" id="homepage"style="background-color: #103A6D;">
     <div class="container-fluid" id="homepagebackground">
         {% include 'homenavbar.html' %}
         <main role="main" class="flex-shrink-0">
             {% block content %} {% endblock content %}
         </main>
 
-        <footer class="footer mt-auto pb-3">
+        <footer class="footer mt-auto pb-3" style="background-color: #103A6D;">
             <div class="container">
                 <div class="d-flex justify-content-between">
                     <div>
-                        <span class="text-muted small">Taylor Segell May 2023</span>
+                        <span class="small" style="color:white;">Taylor Segell May 2023</span>
                     </div>
                     <div class>
-                        <a class="text-muted text-decoration-none small" href="https://github.com/taylorsegell/Diabetes-Predictor-Application">View the source on Github <i class="fa fa-github"></i></a>
+                        <a class="text-decoration-none small" style="color:white;" href="https://github.com/taylorsegell/Diabetes-Predictor-Application">View the source on Github <i class="fa fa-github"></i></a>
                     </div>
                 </div>
             </div>

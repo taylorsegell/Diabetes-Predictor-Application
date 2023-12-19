@@ -1,4 +1,5 @@
-from flask import render_template, current_app as app, jsonify
+import os
+from flask import render_template, current_app as app, jsonify, send_from_directory
 import numpy
 from app import rf_model
 from app.forms import DiagnoseForm
@@ -32,7 +33,7 @@ def diagnosis():
         prediction = 'Positive' if rf_model.predict([features]) else 'Negative' # Convert boolean result to string
         accuracy = "{:.2f}".format(round((numpy.max(rf_model.predict_proba([features])) / 1), 2))
         results = {'prediction': prediction,
-                   'accuracy': accuracy}
+                   'accuracy': accuracy} 
         return results
 
     return jsonify(data=form.errors)
@@ -47,4 +48,7 @@ def about():
 def report():
     return render_template("report.html", title='Report')
 
-
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static'),
+                               'favicon.ico', mimetype='image/vnd.microsoft.icon')
