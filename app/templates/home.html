@@ -1,9 +1,11 @@
 {% extends "hometemplate.html" %} {% set active_page = "home" %} {% block content %}
-<div class="jumbotron text-white bg-transparent m-4" id="jumbotron" style="background-image: url('static/ai_background_transBLABLA.jpg'); background-size: auto 100%; background-repeat: no-repeat;">
+<div class="jumbotron text-white bg-transparent m-4" id="jumbotron"
+    style="background-image: url('static/ai_background_transBLABLA.jpg'); background-size: auto 100%; background-repeat: no-repeat;">
     <div class="container fadeIn bg-transparent">
-        <h3 class="display-3" style="color:#103A6D;">Diabetes Early Detection <br> Classification Model</h3>
-        <p style="color:black">This site offers an example of using a machine learning model to provide a quick prediction of diabetes diagnosis <br> leveraging IBM Cloud Pak for Data and watson<span
-            style="color: blue;font-weight: 400;">x</span>.ai.</p>
+        <h3 class="display-3" style="color:#103A6D;">Early Detection <br> Classification Model</h3>
+        <p style="color:black">This site offers an example of using a machine learning model to provide a quick
+            prediction of diabetes diagnosis <br> leveraging IBM Cloud Pak for Data and watson<span
+                style="color: blue;font-weight: 400;">x</span>.ai.</p>
     </div>
 </div>
 </div>
@@ -12,23 +14,44 @@
         <div class="row">
             <div class="col-md-4 fadeInUp">
                 <div class="card mb-4 shadow">
-                    <div class="d-flex justify-content-center text-muted mt-4 icons">
-                        <span class="fa fa-flask fa-4x"></span>
+
+
+                    <div class="card-body text-center">
+                        <h2>Prediction</2>
+                    </div>
+                    <div class="d-flex justify-content-center text-muted mt-4  icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                            style="width:30%;" id="Layer_1" x="0px" y="0px" viewBox="0 0 32 32"
+                            style="enable-background:new 0 0 32 32;" xml:space="preserve">
+                            <path id="predictability_00000094606959273000634790000015527191089495242943_" fill="#103A6D"
+                                d="M25,31.36H7v-0.72h18V31.36z M16,29.36  C8.082,29.36,1.64,22.918,1.64,15S8.082,0.64,16,0.64S30.36,7.082,30.36,15S23.918,29.36,16,29.36z M16,1.36  C8.479,1.36,2.36,7.479,2.36,15S8.479,28.64,16,28.64S29.64,22.522,29.64,15C29.64,7.479,23.521,1.36,16,1.36z M16,24.36  c-5.161,0-9.36-4.199-9.36-9.36S10.839,5.64,16,5.64c2.287,0,4.47,0.825,6.179,2.33c0.197-0.111,0.424-0.174,0.665-0.174  c0.75,0,1.36,0.61,1.36,1.36c0,0.317-0.109,0.609-0.292,0.841c0.948,1.497,1.448,3.22,1.448,5.003  C25.36,20.161,21.161,24.36,16,24.36z M16,6.36c-4.764,0-8.64,3.876-8.64,8.64s3.876,8.64,8.64,8.64s8.64-3.876,8.64-8.64  c0-1.629-0.451-3.204-1.309-4.575c-0.151,0.059-0.315,0.09-0.487,0.09c-0.75,0-1.36-0.61-1.36-1.36c0-0.247,0.066-0.479,0.182-0.679  C20.094,7.109,18.094,6.36,16,6.36z M22.844,8.516c-0.353,0-0.64,0.287-0.64,0.64s0.287,0.64,0.64,0.64s0.64-0.287,0.64-0.64  S23.196,8.516,22.844,8.516z M16,19.36c-2.404,0-4.36-1.956-4.36-4.36c0-0.43,0.062-0.852,0.184-1.258  c-0.287-0.25-0.468-0.617-0.468-1.026c0-0.75,0.61-1.36,1.36-1.36c0.236,0,0.459,0.061,0.653,0.167  c0.754-0.572,1.678-0.883,2.631-0.883c2.404,0,4.36,1.956,4.36,4.36S18.404,19.36,16,19.36z M12.483,14.056  C12.401,14.362,12.36,14.678,12.36,15c0,2.007,1.633,3.64,3.64,3.64s3.64-1.633,3.64-3.64s-1.633-3.64-3.64-3.64  c-0.759,0-1.495,0.237-2.108,0.673c0.118,0.201,0.185,0.435,0.185,0.684c0,0.75-0.61,1.36-1.36,1.36  C12.637,14.076,12.559,14.069,12.483,14.056z M12.716,12.076c-0.353,0-0.64,0.287-0.64,0.64s0.287,0.64,0.64,0.64  s0.64-0.287,0.64-0.64S13.069,12.076,12.716,12.076z">
+                            </path>
+                            <rect id="_Transparent_Rectangle" style="fill:none;" width="32" height="32"></rect>
+                        </svg>
                     </div>
                     <div class="card-body text-center">
-                        <h4>Make a prediction</h4>
-                        <p> Make a prediction utilizing a trained machine learning model. </p>
-                        <p><a class="btn btn-secondary" href="{{ url_for('diagnose') }}" role="button">View details &raquo;</a></p>
+
+                        <p>Make a prediction utilizing a trained machine learning model.</p>
+                        <p><a class="btn btn-secondary" href="{{ url_for('diagnose') }}" role="button">View details
+                                &raquo;</a></p>
                     </div>
                 </div>
             </div>
+
             <div class="col-md-4 fadeInUp first">
                 <div class="card mb-4 shadow">
+                    <div class="card-body text-center">
+                        <h2>Explore</h2>
+                    </div>
                     <div class="d-flex justify-content-center text-muted mt-4  icons">
-                        <span class="fa fa-bar-chart fa-4x"></span>
+                        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="width:30%;">
+                            <path fill="#103A6D"
+                                d="M15 31.36H9c-.2 0-.36-.17-.36-.36v-6c0-.2.16-.36.36-.36h6c.19 0 .36.16.36.36v6c0 .19-.17.36-.36.36Zm-5.64-.72h5.28v-5.28H9.36v5.28ZM23 23.36h-6c-.2 0-.36-.17-.36-.36v-6c0-.2.16-.36.36-.36h6c.19 0 .36.16.36.36v6c0 .19-.17.36-.36.36Zm-5.64-.72h5.279v-5.28H17.36v5.28ZM4 7.36C2.14 7.36.64 5.85.64 4 .64 2.14 2.14.64 4 .64 5.85.64 7.36 2.14 7.36 4c0 1.85-1.51 3.36-3.36 3.36Zm0-6C2.54 1.35 1.36 2.54 1.36 4c0 1.45 1.18 2.64 2.64 2.64 1.45 0 2.64-1.19 2.64-2.64C6.64 2.54 5.45 1.36 4 1.36Zm0 30C2.14 31.36.64 29.85.64 28c0-1.86 1.5-3.36 3.36-3.36 1.85 0 3.36 1.5 3.36 3.36 0 1.85-1.51 3.36-3.36 3.36Zm0-6c-1.46 0-2.64 1.18-2.64 2.64 0 1.45 1.18 2.64 2.64 2.64 1.45 0 2.64-1.19 2.64-2.64 0-1.46-1.19-2.64-2.64-2.64Zm16 6c-1.86 0-3.36-1.51-3.36-3.36 0-1.86 1.5-3.36 3.36-3.36 1.85 0 3.36 1.5 3.36 3.36 0 1.85-1.51 3.36-3.36 3.36Zm0-6c-1.46 0-2.64 1.18-2.64 2.64 0 1.45 1.18 2.64 2.64 2.64 1.45 0 2.64-1.19 2.64-2.64 0-1.46-1.19-2.64-2.64-2.64Zm8 6c-1.86 0-3.36-1.51-3.36-3.36 0-1.86 1.5-3.36 3.36-3.36 1.85 0 3.36 1.5 3.36 3.36 0 1.85-1.51 3.36-3.36 3.36Zm0-6c-1.46 0-2.64 1.18-2.64 2.64 0 1.45 1.18 2.64 2.64 2.64 1.45 0 2.64-1.19 2.64-2.64 0-1.46-1.19-2.64-2.64-2.64Zm-16-2c-1.86 0-3.36-1.51-3.36-3.36 0-1.86 1.5-3.36 3.36-3.36 1.85 0 3.36 1.5 3.36 3.36 0 1.85-1.51 3.36-3.36 3.36Zm0-6c-1.46 0-2.64 1.18-2.64 2.64 0 1.45 1.18 2.64 2.64 2.64 1.455 0 2.64-1.19 2.64-2.64 0-1.46-1.19-2.64-2.64-2.64Zm19.464 6h-6.93c-.13 0-.25-.07-.32-.19s-.07-.25 0-.36l3.46-6.01c.12-.23.49-.23.62 0l3.46 6c.06.11.06.24 0 .35 -.07.11-.19.18-.32.18Zm-6.31-.72h5.68l-2.85-4.92 -2.85 4.92Zm-18.413-8.9l-2.39 2.38V9.98h-.72v6.131l-2.39-2.385 -.51.5 3.25 3.25 3.25-3.26 -.51-.51Z" />
+
+                        </svg>
+
                     </div>
                     <div class="card-body text-center">
-                        <h4>View the data</h4>
                         <p>View the data used to train the model, as well as relevant visualizations </p>
                         <p><a class="btn btn-secondary" href="/dashapp/" role="button">View details &raquo;</a></p>
                     </div>
@@ -36,13 +59,26 @@
             </div>
             <div class="col-md-4 fadeInUp second">
                 <div class="card mb-4 shadow">
+                    <div class="card-body text-center">
+                        <h2>Learn</h2>
+                    </div>
                     <div class="d-flex justify-content-center text-muted mt-4 icons">
-                        <span class="fa fa-file-text-o fa-4x"></span>
+                        <?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+                        <!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                            id="Layer_1" x="0px" y="0px" viewBox="0 0 32 32"
+                            style="enable-background:new 0 0 32 32;width: 30%;" xml:space="preserve">
+                            <path id="documentation_00000169549664209796938480000018167874221036921985_" fill="#103A6D"
+                                d="M28,31.36H4c-0.199,0-0.36-0.161-0.36-0.36V1  c0-0.199,0.161-0.36,0.36-0.36h18c0.096,0,0.188,0.038,0.255,0.105l6,6C28.322,6.813,28.36,6.904,28.36,7v24  C28.36,31.199,28.199,31.36,28,31.36z M4.36,30.64h23.28V7.36H22c-0.199,0-0.36-0.161-0.36-0.36V1.36H4.36V30.64z M22.36,6.64h4.771  L22.36,1.869V6.64z M24,27.36H8v-0.72h16V27.36z M24,23.36H8v-0.72h16V23.36z M24,19.36H8v-0.72h16V19.36z M24,15.36H8v-0.72h16  V15.36z M24,11.36H8v-0.72h16V11.36z">
+                            </path>
+                            <rect id="_Transparent_Rectangle" style="fill:none;" width="32" height="32"></rect>
+                        </svg>
                     </div>
                     <div class="card-body text-center">
-                        <h4>Learn how it was made</h4>
+
                         <p>Read a summary of the process used to train the machine learning model.</p>
-                        <p><a class="btn btn-secondary" href="{{ url_for('about') }}" role="button">View details &raquo;</a></p>
+                        <p><a class="btn btn-secondary" href="{{ url_for('about') }}" role="button">View details
+                                &raquo;</a></p>
                     </div>
                 </div>
             </div>

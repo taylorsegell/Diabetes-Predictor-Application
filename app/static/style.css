@@ -1,150 +1,169 @@
 body {
-    background-color: #103A6D;
+  background-color: #103a6d;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 #homepage {
-    background-color: #eee;
+  background-color: #eee;
 }
 
+
+.container-fluid {
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
 
 .btn-primary {
-    color: #fff;
-    background-color: #103A6D;
-    border-color: #103A6D;
+  color: #fff;
+  background-color: #103a6d;
+  border-color: #103a6d;
 }
 .btn-primary:hover {
-    color: #fff;
-    background-color: #2960F9;
-    border-color: #2960F9;
+  color: #fff;
+  background-color: #2960f9;
+  border-color: #2960f9;
 }
 
+h2 {
+  font-weight: 400;
+  margin-bottom: 0.25rem;
+  padding-top: 0.5rem;
+  line-height: 1;
+}
+
+.mb-4 {
+    background-color: #E6DFE1;
+}
+
+.mt-4 {
+    margin-top: 0.25rem !important;;
+}
 
 #homepagebackground {
-    background: url(ai-banner.png);
-    background-color: #103A6D;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color:#103A6D!important;
+  background: url(ai-banner.png);
+  background-color: #103a6d;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #103a6d !important;
 }
 
 @media only screen and (max-width: 600px) {
-    #homepagebackground {
-        background-size: 200% auto;
-    }
+  #homepagebackground {
+    background-size: 200% auto;
+  }
 }
 
 .navbar {
-    background-color: #103A6D;
+  background-color: #161616;
 }
 
 #content {
-    max-width: 1080px;
+  max-width: 1080px;
 }
 
 .scrollme {
-    overflow-x: auto;
+  overflow-x: auto;
 }
 
 .fa-4x {
-    font-size: 4em;
-    color: #103A6D;
+  font-size: 4em;
+  color: #103a6d;
 }
 /* hide result div initially, required for fade effects */
 .btn-secondary {
-    color: #fff;
-    background-color: #103A6D;
-    border-color: #6c757d;
+  color: #fff;
+  background-color: #103a6d;
+  border-color: #6c757d;
 }
 #diagnosis-result {
-    display: none;
+  display: none;
 }
-
 
 /* page load animations */
 
 .fadeInUp {
-    -webkit-animation-name: fadeInUp;
-    animation-name: fadeInUp;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 @-webkit-keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        -webkit-transform: translate3d(0, -100%, 0);
-        transform: translate3d(0, -100%, 0);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: none;
-        transform: none;
-    }
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
 }
 
 @keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        -webkit-transform: translate3d(0, 100%, 0);
-        transform: translate3d(0, 100%, 0);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: none;
-        transform: none;
-    }
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
 }
 
 .fadeInUp.first {
-    -webkit-animation-delay: 0.2s;
-    -moz-animation-delay: 0.2s;
-    animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 
 .fadeInUp.second {
-    -webkit-animation-delay: 0.4s;
-    -moz-animation-delay: 0.4s;
-    animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 
 @-webkit-keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @-moz-keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .fadeIn {
-    opacity: 0;
-    -webkit-animation: fadeIn ease-in 1s;
-    -moz-animation: fadeIn ease-in 1s;
-    animation: fadeIn ease-in 1s;
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    -webkit-animation-duration: 1ss;
-    -moz-animation-duration: 1s;
-    animation-duration: 1s;
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1s;
+  -moz-animation: fadeIn ease-in 1s;
+  animation: fadeIn ease-in 1s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1ss;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
 }

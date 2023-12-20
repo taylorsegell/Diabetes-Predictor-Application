@@ -28,3 +28,4 @@ app/__pycache__/routes.cpython-310.pyc
 app/static/old-heatmap.html
 app/static/old_matrix.png
 app/static/ibm-watsonxai-a04.l.webp
+__pycache__/main.cpython-39.pyc
